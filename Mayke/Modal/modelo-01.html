@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<body>
+    <button>Abrir Modal</button>
+
+    <dialog>
+        <h2>Titulo</h2>
+
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quam nulla quia omnis molestias, dignissimos quisquam obcaecati ut maiores deserunt consequatur, porro veniam repellendus error veritatis dolorum blanditiis quaerat non.
+            Numquam amet, velit eaque architecto est blanditiis nesciunt illo officia maiores quidem dolores! Pariatur nam hic voluptatem omnis ipsam provident quos atque repudiandae maxime commodi odit voluptates, sunt consequuntur animi?
+            Officiis, officia quibusdam facilis eum labore ea saepe suscipit reiciendis optio voluptates blanditiis? Amet illo temporibus quia fugiat culpa, maxime veritatis voluptates commodi, iure adipisci veniam laboriosam! Aspernatur, suscipit quasi?
+        </p>
+        <button>X</button>
+    </dialog>
+
+    <script>
+        const btn = document.querySelector("button")
+        const btnClose = document.querySelector("dialog button")
+        const modal = document.querySelector("dialog")
+
+        btn.onclick = () => {
+            e.preventDefault()
+
+            // modal.show()
+            modal.showModal()
+        }
+        btnClose.onclick = () => {
+            e.preventDefault()
+
+            modal.close()
+        }
+    </script>
+</body>
+</html>
