@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 01</title>
+</head>
+<body>
+    <div class="card">
+        <div class="img-box">
+            <img src="./fogete.png" alt="fogete">
+        </div>
+        <div class="content">
+            <h2>Seu futuro começa aqui</h2>
+            <p>
+                Criando projetos reais com html5, css3, javascript,
+                ReactJS, NextJS, Java, PHP e muito mais muito mais.
+            </p>
+            <a href="#" class="read-more">
+                Read more
+            </a>
+        </div>
+    </div>
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(90deg, #0868b2, #2563eb, #4f46e5);
+    }
+    .card{
+        display: flex;
+        justify-content: center;
+        width: 350px;
+        height: 300px;
+        position: relative;
+        background-color: #fff;
+        border-radius: 20px;
+        transition: 0.9s;
+        box-shadow: 0px 35px 80px rgba(0,0,0 0.15);
+        transition: .9s;
+        cursor: pointer;
+    }
+    .card:hover{
+        height: 320px;
+    }
+    .card .img-box{
+        position: absolute;
+        width: 250px;
+        height: auto;
+        top: 0px;
+        transition: .9s;
+    }
+    .card:hover .img-box{
+        top: -100px;
+        scale: 0.75;
+    }
+    .card .img-box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card .content{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        top: 250px;
+        width: 100%;
+        padding: 0px 30px;
+        align-items: center;
+        height: 30px;
+        overflow: hidden;
+        transition: 0.9s;
+    }
+    .card:hover .content{
+        top: 130px;
+        height: 250px;
+    }
+    .card .read-more{
+        background: linear-gradient(90deg, #3730a3, #7e22ce);
+        padding: 12px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+
+</style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
