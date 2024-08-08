@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: #e3e9f7;
+}
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+
+    position: relative; /** especial */
+}
+#sidebar_content{
+    padding: 12px;
+}
+#user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+#user_avatar{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#user_infos{
+    display: flex;
+    flex-direction: column;
+}
+#user_infos span:last-child{ /** especial */
+    color: #6b6b6b;
+    font-size: 12px;
+}
+#side_items{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.side-item{
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+.side-item.active{ /** especial */
+    background-color: #4f46e5; 
+}
+.side-item:hover:not(.active), #logout_btn:hover{ /** especial */
+    background-color: #e3e9f7;
+}
+.side-item a{
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    /* gap: 15px;                   */
+    justify-content: center;  /**  especial observar */
+    color: #000;
+}
+.side-item.active a{ /** especial */
+    color: #e3e9f7;
+}
+.side-item a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+#logout{
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+#logout_btn{
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+}
+
+#open_btn{            /*** ANIMA AI*/
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #4f46e5;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.item-description{   /** muito importante*/
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
+
+#sidebar.open-sidebar{
+    min-width: 15%;
+}
