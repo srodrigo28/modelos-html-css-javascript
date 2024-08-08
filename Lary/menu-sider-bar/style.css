@@ -87,14 +87,18 @@ body{
     border: none;
     padding: 12px;
     font-size: 15px;
-    display: flex;
+    
     gap: 20px;
+    display: flex;
     align-items: center;
+
     border-radius: 8px;
     text-align: start;
     cursor: pointer;
 }
-
+#logout_btn i{
+    margin-left: 18px;
+}
 #open_btn{            /*** ANIMA AI*/
     position: absolute;
     top: 30px;
