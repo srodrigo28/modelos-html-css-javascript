@@ -44,12 +44,12 @@ https://www.youtube.com/watch?v=gOMK_xruAqc
 https://www.youtube.com/watch?v=2jjbteTavm4
 ```
 
-* ** 2 ** Card
+* ** 2 ** Card *** Finish ***
 ```
 https://www.youtube.com/watch?v=J5r_1vB3MWg
 ```
 
-* ** 3 ** Side-Bar Responsiva
+* ** 3 ** Side-Bar Responsiva *** Finish ***
 ```
 https://www.youtube.com/watch?v=lZVQGjTEX-w
 ```
